@@ -15,10 +15,13 @@ app.use(
 );
 app.use(express.json({ limit: "4mb" }));
 
-app.get("/api/health", (_request, response) => {
+function handleHealth(_request: express.Request, response: express.Response) {
   response.json({ status: "ok" });
-});
+}
 
+app.get("/health", handleHealth);
+app.get("/api/health", handleHealth);
+app.use("/images", imagesRouter);
 app.use("/api/images", imagesRouter);
 
 if (existsSync(frontendDistDirectory)) {
