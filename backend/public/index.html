@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color Sort Backend</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f4efe6;
+        color: #1d2731;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at top, rgba(133, 184, 170, 0.25), transparent 38%),
+          linear-gradient(135deg, #f4efe6, #f8f6f1 48%, #efe7d9);
+      }
+
+      main {
+        width: min(92vw, 720px);
+        padding: 32px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(136, 149, 161, 0.22);
+        box-shadow: 0 24px 70px rgba(41, 52, 64, 0.14);
+        backdrop-filter: blur(12px);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1;
+      }
+
+      p {
+        margin: 0 0 16px;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #4f5e6b;
+      }
+
+      code {
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: rgba(29, 39, 49, 0.08);
+        color: #163543;
+      }
+
+      ul {
+        margin: 16px 0 0;
+        padding-left: 18px;
+        color: #354452;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Color Sort Backend</h1>
+      <p>This Vercel project hosts the image-analysis API for the swatch sorter app.</p>
+      <p>Useful endpoints:</p>
+      <ul>
+        <li><code>/api/health</code> for a quick live check</li>
+        <li><code>/api/images/analyze</code> for upload analysis requests</li>
+      </ul>
+    </main>
+  </body>
+</html>
