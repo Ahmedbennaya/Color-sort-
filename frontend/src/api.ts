@@ -1,7 +1,7 @@
 import type { AnalysisMode, AnalyzeResponse, AnalyzedSample, SampleItem } from "./types";
 
 const API_BASE = (import.meta.env.VITE_API_BASE ?? "").replace(/\/$/, "");
-const ANALYZE_PATH = API_BASE ? "/images/analyze" : "/api/images/analyze";
+const ANALYZE_PATH = "/api/images/analyze";
 
 export interface AnalyzeInput {
   id: string;
