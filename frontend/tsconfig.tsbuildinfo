@@ -1,1 +1,0 @@
-{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/detailmodal.tsx","./src/components/palettebar.tsx","./src/components/rankedlist.tsx","./src/components/samplecard.tsx","./src/components/uploadzone.tsx","./src/utils/blobstore.ts","./src/utils/csv.ts","./src/utils/sorting.ts"],"version":"5.9.3"}
