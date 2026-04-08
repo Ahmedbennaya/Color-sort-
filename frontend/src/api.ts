@@ -1,6 +1,7 @@
 import type { AnalysisMode, AnalyzeResponse, AnalyzedSample, SampleItem } from "./types";
 
 const API_BASE = (import.meta.env.VITE_API_BASE ?? "").replace(/\/$/, "");
+const ANALYZE_PATH = API_BASE ? "/images/analyze" : "/api/images/analyze";
 
 export interface AnalyzeInput {
   id: string;
@@ -36,7 +37,7 @@ export async function analyzeImages(
     formData.append("files", input.file);
   }
 
-  const response = await request<AnalyzeResponse>("/api/images/analyze", {
+  const response = await request<AnalyzeResponse>(ANALYZE_PATH, {
     method: "POST",
     body: formData,
   });
